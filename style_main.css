@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Start Navbar */
+nav{
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+/* End Navbar */
+/* Start Video-Background */
+.homepage-video {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+.video-container {
+  position: relative;
+}
+.video-arrow-container {
+	position: absolute;
+	bottom: 20%;
+	width: 100%;
+	font-size: 40px;
+}
+.video-arrow-container span {
+	color: #fff;
+}
+.video-arrow-container a:hover {
+	text-decoration: none;
+}
+/* End Video-Background */
+/* Start gallery */
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+/* End gallery */
+.arrow{
+  display: block;
+  text-align: center;
+  z-index: 2;
+}
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+.fish-info:hover{
+  color: red;
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
