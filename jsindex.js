@@ -1,4 +1,4 @@
-$(document).ready(function(){    
+$(document).ready(function(){
     //FANCYBOX
     //https://github.com/fancyapps/fancyBox
     $(".fancybox").fancybox({
@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$('.dropdown-menu .link').click(function () {
 		$('.dropdown-menu .link').parent().removeClass('active');
 		$(this).parent().addClass('active');
-		
+
 		var idString = $(this).attr('id');
 		var id = parseInt(idString.substr(6));
 		console.log(id);
@@ -17,5 +17,7 @@ $(document).ready(function(){
 			$('#myCarousel').carousel(id);
 		}
 	});
+  $("#whycarp").click(function(){
+        $(".togglecarp").hide();
+    });
 });
-
