@@ -56,6 +56,9 @@ nav{
 .fish-info:hover{
   color: red;
 }
+#whycarp:hover{
+  cursor: pointer;
+}
 /*full width container*/
 @media (max-width: 767px) {
     .block {

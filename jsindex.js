@@ -18,6 +18,22 @@ $(document).ready(function(){
 		}
 	});
   $("#whycarp").click(function(){
-        $(".togglecarp").hide();
+        $(".togglecarp").toggle();
+    });
+    $(window).scroll(function(){
+    var x = $(document).scrollTop();
+    console.log(x);
+
+    if ($(document).scrollTop() > 350) {
+
+        $('#videobackground').get(0).pause();
+
+        }
+
+        else if ($(document).scrollTop() < 150 ) {
+
+            $('#videobackground').get(0).play();
+
+        }
     });
 });
