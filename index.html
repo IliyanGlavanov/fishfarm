@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <!-- My custom .CSS -->
-    <link type="text/css" rel="stylesheet" href="/style_main.css?v=3" />
+    <link type="text/css" rel="stylesheet" href="/style_main.css?v=5" />
   </head>
  <body>
    <!-- Start navbar -->
@@ -62,7 +62,7 @@
             <li><a  id="slide-1" href="#myCarousel" class="link">Carp</a></li>
             <li><a id="slide-2" href="#myCarousel" class="link">Trout</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Other</a></li>
+            <li><a href="#box">Why do it?</a></li>
           </ul>
         </li>
       </ul>
@@ -170,19 +170,23 @@
         <div class="carousel-inner">
             <div class="active item" id="tilapia">
                 <img src="tilapia.jpg" alt="Slide1" />
-
+                <div class="carousel-caption d-none d-md-block mycaption">
+                    <p class="toggletilapia">You should start breeding Tilapia, because it is one of the easiest, fishes, to breed, for food.</p>
+                    <p id="whytilapia" class="why">Why tilapia?</p>
+                </div>
             </div>
             <div class="item" id="carp">
                 <img src="carp.jpg" alt="Slide2" />
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="togglecarp">Breed carp because it is good.</p>
-                    <p id="whycarp">Why carp?</p>
+                <div class="carousel-caption d-none d-md-block mycaption">
+                    <p class="togglecarp">You should start breeding Carp, because it is one of the easiest, fishes, to breed, for food.</p>
+                    <p id="whycarp" class="why">Why carp?</p>
                 </div>
             </div>
             <div class="item" id="trout">
                 <img src="trout.jpg" alt="Slide3" />
-                <div class="carousel-caption d-none d-md-block">
-                    <h3></h3>
+                <div class="carousel-caption d-none d-md-block mycaption">
+                    <p class="toggletrout">You should start breeding Carp, because it is one of the easiest, fishes, to breed, for food.</p>
+                    <p id="whytrout" class="why">Why trout?</p>
                 </div>
             </div>
         </div>
@@ -205,6 +209,13 @@
                   <a href="https://gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
            </div>
     </div>
+    <div id="box">
+		<div id="box-inner">
+
+			"Fish provides more than one billion poor people with most of their daily animal protein."
+
+		</div>
+	</div>
     <!-- Footer with social icons end -->
  </body>
   </html>
