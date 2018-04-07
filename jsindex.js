@@ -20,6 +20,12 @@ $(document).ready(function(){
   $("#whycarp").click(function(){
         $(".togglecarp").toggle();
     });
+  $("#whytrout").click(function(){
+        $(".toggletrout").toggle();
+    });
+  $("#whytilapia").click(function(){
+        $(".toggletilapia").toggle();
+    });
     $(window).scroll(function(){
     var x = $(document).scrollTop();
     console.log(x);
